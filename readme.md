@@ -5,11 +5,20 @@
 -----------------------------------------------------------------------------------------------------------------------------------
 ->Coding convention - v1.0 
 
+-Environment Laravel 5.4, PHP >= 7.0.0 OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, Tokenizer PHP Extension, XML PHP Extension
+
 -Variables are in camelCase such as getName, getEmailAdd etc.
 
 -Comment on every function.
 
 -Developers must comment any of updates and changes.
+
+-Functions and parameters:Avoid passing huge numbers of parameters to functions or constructors.
+
+-Using assignment as an expression is surprising to the reader and looks like an error. Do not write code like this:
+if ( $a = foo() ) {
+    bar();
+}
 
 -Use <https://> instead of <http://> or <//> when omitting the protocols.
 
@@ -22,7 +31,15 @@
 -Developers must backup the original copy of the project. And keep it for at least 14 days.
 
 -Codes with core functions must stored in specific folders. Only global files can be stored on the root (resources/views/).
-*last update: 27/8/2017
+
+-The class namespace declaration must be on the same line as <?php.
+
+-A class' opening { must be on the same line as the class name.
+
+-Functions and control structures must use Allman style braces.
+
+-Indent with tabs, align with spaces.
+*last update: 3/9/2017
 
 
 
